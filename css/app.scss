@@ -1,0 +1,43 @@
+@import "css/reset.css";
+@import "typography.scss";
+
+$primary-color: #2c5b3d;
+$body-font: "Jost";
+$body-size: 24px;
+
+$mq-large: 1200px;
+$mq-med: 800px;
+$mq-small: 500px;
+
+@mixin mq($width) {
+    @media (max-width: $width) {
+        @content;
+    }
+}
+
+@mixin vertical-center {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+body {
+    background-color: $primary-color;
+    color: white;
+    font-family: $body-font;
+    font-size: $body-size;
+    line-height: 1.5;
+    min-height: 100vh;
+    @include vertical-center;
+}
+
+section {
+    width: 500px;
+    @include mq($mq-small) {
+        width: 90%;
+    }
+    p {
+        margin: 24px 0 0 0;
+    }
+}
