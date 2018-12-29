@@ -1,4 +1,47 @@
-@font-face {
-    font-family: "Jost";
-    src: url(fonts/jost-book.woff2), url(fonts/jost-book.woff2);
+@import url('https://fonts.googleapis.com/css?family=Libre+Franklin:400,500,700');
+
+body {
+    font-family: $body-font;
+    font-size: 2 * $base;
+    line-height: 3 * $base;
+}
+
+p {
+    font-size: 2.25 * $base;
+    line-height: 3 * $base;
+    margin: 0 0 (3 * $base) 0;
+}
+
+h1 {
+    font-size: 7.5 * $base;
+    line-height: 8 * $base;
+    margin: 0 0 (3 * $base) 0;
+}
+
+h2 {
+    font-size: 5 * $base;
+    line-height: 6 * $base;
+    margin: 0 0 (2 * $base) 0;
+}
+
+h3 {
+    font-size: 3 * $base;
+    font-weight: 700;
+    line-height: 4 * $base;
+    margin: 0 0 (1 * $base) 0;
+}
+
+h4 {
+    font-size: 2 * $base;
+    font-weight: 500;
+    line-height: 3 * $base;
+    margin: 0 0 (2 * $base) 0;
+    color: rgba(#ffffff, 0.6);
+    text-transform: uppercase;
+    letter-spacing: ($base / 2);
+}
+
+small, span {
+    display: block;
+    margin: 0 0 (2 * $base) 0;
 }
