@@ -1,0 +1,11 @@
+@import "mixins";
+@import "reset";
+@import "typography";
+@import "grid";
+
+body {
+    background-color: $primary-color;
+    color: white;
+    min-height: 100vh;
+    @include vertical-center;
+}
