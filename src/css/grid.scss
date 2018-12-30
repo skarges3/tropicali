@@ -1,0 +1,85 @@
+.fw {
+    width: 100%;
+    margin: (2 * $base) 0;
+    background-color: rgba(0,0,0,0.1);
+    @include vertical-center;
+}
+
+.grid_c {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    max-width: $mq-large;
+    grid-gap: 2 * $base;
+    .col {
+        background-color: rgba(255,255,255,0.1);
+        height: 100%;
+        width: 100%;
+        @include vertical-center;
+    }
+    &--dense {
+        grid-auto-flow: dense;
+    }
+    &--center {
+        align-items: center;
+        justify-content: center;
+    }
+    @include mq($mq-large) {
+        max-width: $mq-med;
+    }
+    @include mq($mq-med) {
+        max-width: $mq-small;
+    }
+}
+
+
+
+.col--8 {
+    grid-column: span 8;
+}
+.col--7 {
+    grid-column: span 7;
+}
+.col--6 {
+    grid-column: span 6;
+}
+.col--5 {
+    grid-column: span 5;
+}
+.col--4 {
+    grid-column: span 4;
+}
+.col--3 {
+    grid-column: span 3;
+}
+.col--2 {
+    grid-column: span 2;
+}
+.col--1 {
+    grid-column: span 1;
+}
+
+.row--8 {
+    grid-row: span 8;
+}
+.row--7 {
+    grid-row: span 7;
+}
+.row--6 {
+    grid-row: span 6;
+}
+.row--5 {
+    grid-row: span 5;
+}
+.row--4 {
+    grid-row: span 4;
+}
+.row--3 {
+    grid-row: span 3;
+}
+.row--2 {
+    grid-row: span 2;
+}
+.row--1 {
+    grid-row: span 1;
+}
