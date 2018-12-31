@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css?family=Libre+Franklin:400,500,700');
+
+@custom-media --mq-large (max-width: 1200px);
+@custom-media --mq-medium (max-width: 800px);
+@custom-media --mq-small (max-width: 550px);
+
+:root {
+    --base: 8px;
+    --main-spacing: calc(8 * var(--base));
+    --gap-spacing: calc(5 * var(--base));
+    --header-height: calc(10 * var(--base));
+    --hero-spacing: calc(30 * var(--base));
+
+    --centered-width: 50%;
+
+    --primary-color: #f70201;
+    --text-on-light: #151620;
+    --text-on-dark: #ffffff;
+    --background-color: #ffffff;
+    --brown: #ca774a;
+
+    --body-font: "Libre Franklin";
+    --body-size: 24px;
+    --button-size: calc(2 * var(--base));
+}
+
+@media (--mq-medium) {
+    :root {   
+        --primary-color: rgb(228, 196, 90);
+        --main-spacing: calc(5 * var(--base));
+        --gap-spacing: calc(4 * var(--base));
+        --hero-spacing: calc(15 * var(--base));
+
+        --centered-width: 75%;
+    }
+}
+
+@media (--mq-small) {
+    :root {   
+        --main-spacing: calc(3 * var(--base));
+        --gap-spacing: calc(2 * var(--base));
+        --hero-spacing: calc(10 * var(--base));
+    }
+}
