@@ -1,0 +1,68 @@
+body {
+    font-family: var(--body-font);
+    font-size: calc(2 * var(--base));
+    line-height: calc(3 * var(--base));
+}
+
+p {
+    font-size: calc(2.25 * var(--base));
+    line-height: calc(3 * var(--base));
+    margin: 0 0 calc(3 * var(--base)) 0;
+}
+
+h1 {
+    font-size: calc(7.5 * var(--base));
+    line-height: calc(8 * var(--base));
+    margin: 0 0 calc(3 * var(--base)) 0;
+}
+
+h2 {
+    font-size: calc(5 * var(--base));
+    line-height: calc(6 * var(--base));
+    margin: 0 0 calc(2 * var(--base)) 0;
+}
+
+h3 {
+    font-size: calc(3 * var(--base));
+    line-height: calc(4 * var(--base));
+    font-weight: 700;
+    margin: 0 0 calc(1 * var(--base)) 0;
+}
+
+h4 {
+    font-size: calc(2 * var(--base));
+    line-height: calc(3 * var(--base));
+    font-weight: 500;
+    margin: 0 0 calc(2 * var(--base)) 0;
+    color: rgba(#ffffff, 0.6);
+    text-transform: uppercase;
+    letter-spacing: calc(var(--base) / 2);
+}
+
+small, span {
+    display: block;
+    margin: 0 0 calc(2 * var(--base)) 0;
+}
+
+button, .button {
+    font-size: var(--buton-size);
+    font-weight: 700;
+    letter-spacing: calc(var(--base) / 2);
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+    color: var(--text-on-dark);
+    border: 1px solid var(--text-on-dark);
+    padding: calc(2 * var(--base)) calc(3 * var(--base));
+}
+
+.button--fill {
+    background-color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+}
+
+@media (--mq-small) {
+    button, .button {
+        padding: calc(1 * var(--base)) calc(1.5 * var(--base));
+    }
+}
